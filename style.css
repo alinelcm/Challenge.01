@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Grobek Black";
+  src: url(Fontes/FontsFree-Net-Grobek-Black.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  background-color: #e3d6cd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  width: 340px;
+  height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.271);
+}
+.cardImage {
+  background-image: url(images/image-product-mobile.jpg);
+  width: 100%;
+  height: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0px 0px;
+}
+.cardDescription {
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.productType {
+  font-size: 0.7em;
+}
+.productName {
+  font-family: "Grobek Black", Arial, sans-serif;
+  font-size: 1.8em;
+  color: black;
+  line-height: 1.1em;
+  /* padding: 10px; */
+}
+.productDescription {
+  line-height: 1.4em;
+  font-size: 0.9em;
+}
+.prices {
+  /* padding: 20px 0px; */
+  display: flex;
+  gap: 15px;
+}
+.currentPrice {
+  font-family: "Grobek Black", Arial, sans-serif;
+  font-size: 2em;
+  color: #3d8168;
+}
+.price {
+  text-decoration: line-through;
+  transform: translate(0px, 10px);
+}
+.cartBtn {
+  text-align: center;
+}
+button {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #3d8168;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #254e3f;
+}
+.cartIcon {
+  transform: translate(-8px, 2px);
+}
+
+@media screen and (min-width: 426px) {
+  .card {
+    width: 600px;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardImage {
+    background-image: url(images/image-product-desktop.jpg);
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .cardDescription {
+    width: 50%;
+  }
+}
